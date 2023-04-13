@@ -1,5 +1,4 @@
-pub mod rlog {
-    
+
     #[derive(PartialEq, Clone)]
     pub enum MsgStructElement {
         DateAndTime,
@@ -32,4 +31,3 @@ pub mod rlog {
         }
 
     }
-}
