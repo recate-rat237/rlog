@@ -1,4 +1,4 @@
-pub(crate) mod rlog {
+pub mod rlog {
     
     #[derive(PartialEq, Clone)]
     pub enum MsgStructElement {
