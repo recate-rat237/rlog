@@ -1,4 +1,4 @@
-pub mod logging {
+//pub mod logging {
     
     #[derive(PartialEq, Clone)]
     pub enum MsgStructElement {
@@ -32,4 +32,4 @@ pub mod logging {
         }
 
     }
-}
+//}
