@@ -1,9 +1,4 @@
-
-use std::time::Instant;
-
-pub use crate::lib::rlog::*;
-
-fn main() {
+example benchmark code {
     let starttime = Instant::now();
     let mut msg_struct = Vec::<MsgStructElement>::default();
     msg_struct.push(MsgStructElement::DateAndTime);
