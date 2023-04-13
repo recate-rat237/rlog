@@ -1,10 +1,4 @@
 pub mod rlog {
-
-    #[link(name = "kernel32", kind = "dylib")]
-    extern {
-        fn printf(_fmt_str: *const u8, ...) -> i32;
-        // Reference the exported functions
-    }
     
     #[derive(PartialEq, Clone)]
     pub enum MsgStructElement {
