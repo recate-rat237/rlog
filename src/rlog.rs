@@ -1,4 +1,4 @@
-pub mod rlog {
+pub mod logging {
     
     #[derive(PartialEq, Clone)]
     pub enum MsgStructElement {
