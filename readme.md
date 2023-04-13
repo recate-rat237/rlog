@@ -1,4 +1,7 @@
-example benchmark code {
+
+Example benchmark code:
+```
+fn main() {
     let starttime = Instant::now();
     let mut msg_struct = Vec::<MsgStructElement>::default();
     msg_struct.push(MsgStructElement::DateAndTime);
@@ -10,3 +13,4 @@ example benchmark code {
     }
     println!("Time: {:?}", starttime.elapsed());
 }
+```
