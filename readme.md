@@ -36,3 +36,4 @@ Here is output
 log_g.log(2, &format!("log_level(2); Num is {}", i), "Error");
 ```
 Is not working because log_level is 1.
+In this example, msg_struct is the message structure: \[DateAndTime\]Message\[Mark\]
