@@ -19,12 +19,12 @@ impl RLogger {
 
     pub fn log(&self, log_level: i32, msg: &str, mark: &str) {
         if log_level <= self.log_level {
-            for i in self.msg_struct {
-                if i == MsgStructElement::Mark {
+            for i in &self.msg_struct {
+                if *i == MsgStructElement::Mark {
                     print!("[{}]", mark);
-                } else if i == MsgStructElement::Message {
+                } else if *i == MsgStructElement::Message {
                     print!("{}", msg);
-                } else if i == MsgStructElement::DateAndTime {
+                } else if *i == MsgStructElement::DateAndTime {
                     print!("[{}]", chrono::Utc::now());
                 } 
             }
