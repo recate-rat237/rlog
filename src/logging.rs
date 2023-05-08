@@ -17,7 +17,7 @@ impl RLogger {
         RLogger { msg_struct: msg_struct, log_level: log_level }
     }
 
-    pub fn log(self, log_level: i32, msg: &str, mark: &str) {
+    pub fn log(&self, log_level: i32, msg: &str, mark: &str) {
         if log_level <= self.log_level {
             for i in self.msg_struct {
                 if i == MsgStructElement::Mark {
