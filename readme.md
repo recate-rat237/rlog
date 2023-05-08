@@ -20,3 +20,19 @@ fn main() {
     }
 }
 ```
+Here is output 
+```cmd
+[YYYY-MM-DD HH:MM:SS.:9 UTC]log_level(0); Num is 0[Info]
+[YYYY-MM-DD HH:MM:SS.:9 UTC]log_level(1); Num is 0[Debug]
+[YYYY-MM-DD HH:MM:SS.:9 UTC]log_level(0); Num is 1[Info]
+[YYYY-MM-DD HH:MM:SS.:9 UTC]log_level(1); Num is 1[Debug]
+[YYYY-MM-DD HH:MM:SS.:9 UTC]log_level(0); Num is 2[Info]
+[YYYY-MM-DD HH:MM:SS.:9 UTC]log_level(1); Num is 2[Debug]
+[YYYY-MM-DD HH:MM:SS.:9 UTC]log_level(0); Num is 3[Info]
+[YYYY-MM-DD HH:MM:SS.:9 UTC]log_level(1); Num is 3[Debug]
+```
+#
+```rs
+log_g.log(2, &format!("log_level(2); Num is {}", i), "Error");
+```
+Is not working because log_level is 1.
