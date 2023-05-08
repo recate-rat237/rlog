@@ -14,9 +14,9 @@ fn main() {
     let log_g = RLogger::new(msg_struct, 1);
 
     for i in 0..4 {
-        log_g.clone().log(0, &format!("log_level(0); Num is {}", i), "Info");
-        log_g.clone().log(1, &format!("log_level(1); Num is {}", i), "Debug");
-        log_g.clone().log(2, &format!("log_level(2); Num is {}", i), "Error");
+        log_g.log(0, &format!("log_level(0); Num is {}", i), "Info");
+        log_g.log(1, &format!("log_level(1); Num is {}", i), "Debug");
+        log_g.log(2, &format!("log_level(2); Num is {}", i), "Error");
     }
 }
 ```
