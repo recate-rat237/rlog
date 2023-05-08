@@ -10,7 +10,7 @@ fn main() {
     msg_struct.push(MsgStructElement::Message);
     
     msg_struct.push(MsgStructElement::Mark);
-    //let log_g = RLogger::new(msg_struct, 1_i32); // fast ?
+    
     let log_g = RLogger::new(msg_struct, 1);
 
     for i in 0..4 {
